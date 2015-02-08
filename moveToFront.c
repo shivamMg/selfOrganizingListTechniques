@@ -9,7 +9,7 @@ int main() {
 	char string[100];   
     char alphabets[27];
     char ch, *tmp;
-    int i, j, index_ch;
+    int i, j, index_ch, probes;
 
     for (i = 0; i < 26; i++) 
         alphabets[i] = (char)(i + 97);
@@ -27,7 +27,8 @@ int main() {
     tmp = strchr(string, '\n');
     if (tmp != NULL)
         *tmp = '\0';
-
+    
+	probes = 0;
     for (i = 0; i < strlen(string); i++) {
         ch = string[i];
         index_ch = -1;
@@ -47,12 +48,15 @@ int main() {
             j--;
         }
         alphabets[0] = ch;
+
+		probes += index_ch + 1;
     }
 
     printf("\nAlphabets: ");
     for (i = 0; i < 27; i++) 
         printf("%c", alphabets[i]);
-    printf("\n\n");
+    printf("\nProbes   : %d", probes);
+	printf("\n\n");
 
     return(0);
 }
