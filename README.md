@@ -1,6 +1,6 @@
 ## Self Organizing List Techniques
 
-A [Self Organizing List][http://en.wikipedia.org/wiki/Self-organizing_list] reorders its elements in a way, so that the elements accessed the most are moved towards front. This algorithm is applied in sequential access of files.
+A [Self Organizing List][1] reorders its elements in a way, so that the elements accessed the most are moved towards front. This algorithm is applied in sequential access of files.
 
 ---
 
@@ -28,4 +28,6 @@ The three C programs cover these techniques. They also calculate the number of p
 
 > Compile the `.c` files.
 > Run the binaries.
+ 
+ [1]: http://en.wikipedia.org/wiki/Self-organizing_list
  
