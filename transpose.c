@@ -5,7 +5,7 @@
 #define SWAP(X, Y) char T;T=X;X=Y;Y=T;
 int main() {
 	printf("###############################\n");
-	printf("### Transpose Technique ###\n");
+	printf("##### Transpose Technique #####\n");
 	printf("###############################\n");
 	char string[100];   
     char alphabets[27];
